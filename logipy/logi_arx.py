@@ -7,6 +7,7 @@ Copyright (C) 2011-2015 Logitech. All rights reserved.
 Author: Tom Lambert
 Email: devtechsupport@logitech.com
 """
+from __future__ import print_function
 
 import ctypes
 import os
@@ -52,8 +53,8 @@ def callback_wrapper(event_type, event_value, event_arg, context):
     on_callback(event_type, event_value, event_arg, context)
 
 def default_callback(event_type, event_value, event_arg, context):
-    print '\n[Arx] default_callback called with: event_type = {event_type}, event_value = {event_value}, event_arg = {event_arg}, context = {context}'.format(
-        event_type = event_type, event_value = event_value, event_arg = event_arg, context = context)
+    print('\n[Arx] default_callback called with: event_type = {event_type}, event_value = {event_value}, event_arg = {event_arg}, context = {context}'.format(
+        event_type = event_type, event_value = event_value, event_arg = event_arg, context = context))
 
 # Required Globals
 #
